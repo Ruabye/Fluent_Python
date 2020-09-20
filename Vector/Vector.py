@@ -15,7 +15,7 @@ class Vector:
 
     def __repr__(self):
         #"print()"
-        return "Vector(%s, %s)"%(self.x, self.y)
+        return "Vector(%r, %r)"%(self.x, self.y)
 
     def __mul__(self, other):
         #"*"
