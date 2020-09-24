@@ -61,6 +61,9 @@ def main():
     print("ints2.pop():", ints2.pop())
     print("ints2.pop(2)",ints2.pop(2))
     print("ints2:", ints2)
+    #删除第一个出现的数字，没有该数时不报错
+    ints2.remove(0)
+    print("ints2.remove(0):", ints2)
 
 if __name__ == "__main__":
     main()
