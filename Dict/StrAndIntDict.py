@@ -24,5 +24,7 @@ class myStrtoIntDict(dict):
         return False
 
 if __name__ == "__main__":
-    my_dict = myStrtoIntDict({"1":10, "2":20})
-    print(1 in my_dict)
+    #my_dict[3]与my_dict["3"]返回的值是固定的，因为__getitem__会优先执行
+    my_dict = myStrtoIntDict({"1":10, "2":20,"3":40, 3:20})
+
+    print(my_dict[3])
